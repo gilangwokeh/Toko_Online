@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navbar Responsif</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navbar-container">
+              <a href="#" class="logo">Logo</a>
+              <ul class="nav-links" id="navLinks">
+                <li>
+                    <a href="#">Beranda</a>
+                </li>
+                <li>
+                    <a href="#Tentang">Tentang</a>
+                </li>
+                <li>
+                    <a href="#Layanan">Layanan</a>
+                </li>
+                <li>
+                    <a href="#Kontak">Kontak</a>
+                </li>
+              </ul>
+              <span class="nav-icon" onclick="toggleNav()">&#9776;</span>
+            </div>
+          </nav>
+    </header>
+    <div class="carousel">
+        <div class="carousel-container">
+          <div class="carousel-item">
+            <img src="image1.jpg" alt="Image 1">
+          </div>
+          <div class="carousel-item">
+            <img src="image2.jpg" alt="Image 2">
+          </div>
+          <div class="carousel-item">
+            <img src="image3.jpg" alt="Image 3">
+          </div>
+        </div>
+      </div>
+  <section class="services" id="Layanan">
+    <div class="container-services">
+      <div class="service">
+        <i class="fas fa-desktop"></i>
+        <h2>Web Design</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac justo quis elit auctor elementum ut non lectus.</p>
+      </div>
+      <div class="service">
+        <i class="fas fa-cogs"></i>
+        <h2>Web Development</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac justo quis elit auctor elementum ut non lectus.</p>
+      </div>
+      <div class="service">
+        <i class="fas fa-mobile-alt"></i>
+        <h2>Mobile App Development</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac justo quis elit auctor elementum ut non lectus.</p>
+      </div>
+    </div>
+  </section>
+  <section class="about" id="Tentang">
+    <div class="container-about">
+      <div class="about-content">
+        <h2>Tentang Kami</h2>
+        <p>Jika Anda mencari burung peliharaan yang baik, tempat kami adalah pilihan yang tepat. Tim kami yang berpengalaman akan dengan senang hati membantu Anda menemukan burung yang sesuai dengan preferensi dan kebutuhan Anda.</p>
+        <p>Silakan jelajahi koleksi burung kami dan hubungi kami jika Anda memiliki pertanyaan atau ingin melakukan pemesanan. Terima kasih atas kunjungan Anda dan kami berharap dapat membantu Anda menemukan burung peliharaan yang sempurna.</p>
+      </div>
+    </div>
+  </section>
+  <section class="contact" id="Kontak">
+    <div class="container-contact">
+      <div class="contact-info">
+        <div class="info-item">
+          <i class="fas fa-envelope"></i>
+          <h3>Email</h3>
+          <p>gilangsos99@gmail.com</p>
+        </div>
+        <div class="info-item">
+          <i class="fas fa-phone"></i>
+          <h3>Telepon</h3>
+          <p>+6289631119809</p>
+        </div>
+        <div class="info-item">
+          <i class="fas fa-map-marker-alt"></i>
+          <h3>Alamat</h3>
+          <p>Jl. H. Ung No.f9, RT.6/RW.3, Utan Panjang, Kec. Kemayoran, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10650</p>
+        </div>
+      </div>
+    </div>
+  </section>
+    <div class="footer-bottom">
+      &copy; 2023 Gilang. All rights reserved.
+    </div>
+  </footer>
+  <script src="./index.js"></script>
+</body>
+</html>

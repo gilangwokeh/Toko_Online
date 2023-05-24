@@ -6,54 +6,6 @@ body {
   padding: 0;
 }
 
-/* .navbar {
-  background-color: #333;
-  color: #fff;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  left: 0;
-  z-index: 9999;
-}
-
-.navbar-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px;
-}
-
-.logo {
-  font-size: 1.5rem;
-}
-
-.navbar-menu {
-  display: flex;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.navbar-menu li {
-  margin-right: 10px;
-}
-
-.navbar-menu li a {
-  color: #fff;
-  text-decoration: none;
-  padding: 5px 10px;
-}
-
-.navbar-toggle,
-.navbar-close {
-  display: none;
-  background: none;
-  border: none;
-  color: #fff;
-  font-size: 1.5rem;
-  cursor: pointer;
-} */
-
 main {
   display: flex;
   flex-wrap: nowrap;
@@ -162,32 +114,30 @@ label #btn-check {
   left: -195px;
 }
 
+.arrow-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #f1f1f1;
+  color: #333;
+  text-decoration: none;
+  border-radius: 4px;
+  margin-top: 5%;
+}
+
+.arrow {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border: solid #333;
+  border-width: 0 2px 2px 0;
+  transform: rotate(-135deg);
+  margin-right: 8px;
+}
+
 .text-Judul {
   margin: 60px;
   text-align: center;
   font-size: 30px;
-}
-
-.carousel {
-  width: 100%;
-  overflow: hidden;
-  position: relative;
-  margin: 20px 0 20px 0;
-}
-
-.carousel-container {
-  display: flex;
-  transition: transform 0.3s ease;
-}
-
-.carousel-item {
-  flex: 0 0 100%;
-}
-
-.carousel-item img {
-  width: 50%;
-  height: auto;
-  padding-left: 25%;
 }
 
 .slider-container {
@@ -212,16 +162,6 @@ label #btn-check {
   margin-top: 10px;
 }
 
-.slider-buttons button {
-  background-color: #333;
-  color: #fff;
-  border: none;
-  padding: 5px 10px;
-  margin: 0 5px;
-  font-size: 1rem;
-  cursor: pointer;
-}
-
 .prev-btn,
 .next-btn {
   position: absolute;
@@ -240,6 +180,49 @@ label #btn-check {
 }
 
 .next-btn {
+  right: 10px;
+}
+
+.slider-container2 {
+  width: 50%;
+  overflow: hidden;
+  position: relative;
+  margin-left: 25%;
+}
+
+.slider2 {
+  display: flex;
+  transition: transform 0.3s ease;
+}
+
+.slider2 img {
+  width: 100%;
+  height: auto;
+}
+
+.slider-buttons2 {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.prev-btn2,
+.next-btn2 {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.prev-btn2 {
+  left: 10px;
+}
+
+.next-btn2 {
   right: 10px;
 }
 

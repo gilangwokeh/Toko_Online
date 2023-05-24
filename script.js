@@ -1,29 +1,3 @@
-const carouselContainer = document.querySelector(".carousel-container");
-const carouselItems = document.querySelectorAll(".carousel-item");
-const totalItems = carouselItems.length;
-let currentIndex = 0;
-
-function showItem(index) {
-  if (index < 0) {
-    index = totalItems - 1;
-  } else if (index >= totalItems) {
-    index = 0;
-  }
-
-  carouselContainer.style.transform = `translateX(-${index * 100}%)`;
-  currentIndex = index;
-}
-
-function nextItem() {
-  showItem(currentIndex + 1);
-}
-
-function prevItem() {
-  showItem(currentIndex - 1);
-}
-
-setInterval(nextItem, 5000);
-
 const slider = document.querySelector(".slider");
 const sliderImages = document.querySelectorAll(".slider img");
 const totalSlides = sliderImages.length;
@@ -31,7 +5,6 @@ let currentIndexSlider = 0;
 
 const prevButton = document.querySelector(".prev-btn");
 const nextButton = document.querySelector(".next-btn");
-const sliderButtons = document.querySelector(".slider-buttons");
 
 prevButton.addEventListener("click", () => {
   prevSlide();
@@ -61,6 +34,43 @@ function prevSlide() {
 }
 
 showSlide(currentIndexSlider);
+
+const slider2 = document.querySelector(".slider2");
+const sliderImages2 = document.querySelectorAll(".slider2 img");
+const totalSlides2 = sliderImages.length;
+let currentIndexSlider2 = 0;
+
+const prevButton2 = document.querySelector(".prev-btn2");
+const nextButton2 = document.querySelector(".next-btn2");
+
+prevButton2.addEventListener("click", () => {
+  prevSlide2();
+});
+
+nextButton2.addEventListener("click", () => {
+  nextSlide2();
+});
+
+function showSlide2(index) {
+  if (index < 0) {
+    index = totalSlides2 - 1;
+  } else if (index >= totalSlides2) {
+    index = 0;
+  }
+
+  slider2.style.transform = `translateX(-${index * 100}%)`;
+  currentIndexSlider2 = index;
+}
+
+function nextSlide2() {
+  showSlide2(currentIndexSlider2 + 1);
+}
+
+function prevSlide2() {
+  showSlide2(currentIndexSlider2 - 1);
+}
+
+showSlide2(currentIndexSlider2);
 
 const helpWhatsappBtn = document.getElementById("help-whatsapp-btn");
 const helpWhatsappPopup = document.getElementById("help-whatsapp-popup");

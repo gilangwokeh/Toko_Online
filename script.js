@@ -1,15 +1,3 @@
-const navbarToggle = document.getElementById("navbar-toggle");
-const navbarMenu = document.getElementById("navbar-menu");
-const navbarClose = document.getElementById("navbar-close");
-
-navbarToggle.addEventListener("click", () => {
-  navbarMenu.classList.toggle("open");
-});
-
-navbarClose.addEventListener("click", () => {
-  navbarMenu.classList.remove("open");
-});
-
 const carouselContainer = document.querySelector(".carousel-container");
 const carouselItems = document.querySelectorAll(".carousel-item");
 const totalItems = carouselItems.length;

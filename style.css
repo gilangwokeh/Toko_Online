@@ -428,39 +428,19 @@ label #btn-check {
 }
 
 @media screen and (max-width: 768px) {
-  /* .navbar-toggle {
-    display: block;
-  }
-
-  .navbar-menu {
-    display: none;
-  }
-
-  .navbar-menu.open {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .navbar-menu.open li {
-    margin: 10px 0;
-  }
-
-  .navbar-close {
-    display: none;
-  }
-  
-  .navbar-menu.open ~ .navbar-close {
-    display: block;
-  } */
-
   .text-Judul {
     margin: 60px 0 20px 0;
     font-size: 18px;
   }
   
   .slider-container{
-    width: 50%;
-    margin-left: 25%;
+    width: 75%;
+    margin-left: 15%;
+  }
+
+  .slider-container2{
+    width: 75%;
+    margin-left: 15%;
   } 
 
   .help-whatsapp {
